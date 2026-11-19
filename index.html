@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Fórmula Resolvente</title>
+</head>
+<body>
+
+  <script>
+    let a = Number(prompt("a:"));
+    let b = Number(prompt("b:"));
+    let c = Number(prompt("c:"));
+
+    let delta = b * b - 4 * a * c;
+
+    if (delta < 0) {
+      alert("Sem raízes reais.");
+    } else {
+      let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+      let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+      alert(`x1 = ${x1}\nx2 = ${x2}`);
+    }
+  </script>
+
+</body>
+</html>
